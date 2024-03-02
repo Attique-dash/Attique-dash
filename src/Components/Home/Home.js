@@ -53,12 +53,12 @@ function Home() {
     localStorage.setItem('userinfodata', JSON.stringify(userinfodata));
   }, [userinfodata]);
 
-  const editUser = (index) => {
-    setAction("Edit");
-    const selectedUser = userinfodata.find((x, i) => i === index);
-    setUserInfoData(selectedUser);
-    setEditIndex(index);
-  }
+  // const editUser = (index) => {
+  //   setAction("Edit");
+  //   const selectedUser = userinfodata.find((x, i) => i === index);
+  //   setUserInfoData(selectedUser);
+  //   setEditIndex(index);
+  // }
 
   // const deleteUser = async (index) => {
   //   try {
