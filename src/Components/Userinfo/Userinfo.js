@@ -1,32 +1,32 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../Userinfo/Userinfo.css";
-import { auth } from "../../Firebase";
+// import { auth } from "../../Firebase";
 import Logo from "../images/logo .png";
 import 'react-responsive-modal/styles.css';
-import Adduser from "../images/adduser.png";
-import view from "../images/view.png";
-import edit from "../images/edit.png";
-import delet from "../images/delet.png";
-import cross from "../images/cross.png";
-import User from "../images/user (3).png";
+// import Adduser from "../images/adduser.png";
+// import view from "../images/view.png";
+// import edit from "../images/edit.png";
+// import delet from "../images/delet.png";
+// import cross from "../images/cross.png";
+// import User from "../images/user (3).png";
 import inputuser from "../images/inpusr.png";
 import money from "../images/money.png";
 import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
-import { storage, db } from "../../Firebase";
-import { v4 } from "uuid";
+// import { storage, db } from "../../Firebase";
+// import { v4 } from "uuid";
 // import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
 // import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
-import Home from "../Home/Home";
+// import Home from "../Home/Home";
 
 function Userinfo(){
  
     const [userinfodata, setUserInfoData] = useState("");
-    const [action, setAction] = useState("Add");
-    const [editIndex, setEditIndex] = useState("");
-    const [Image, setImage] = useState("");
-    const [defaultImage, setDefaultImage] = useState(User);
-    const [userInfoImage, setUserInfoImage] = useState("");
+    // const [action, setAction] = useState("Add");
+    // const [editIndex, setEditIndex] = useState("");
+    // const [Image, setImage] = useState("");
+    // const [defaultImage, setDefaultImage] = useState(User);
+    // const [userInfoImage, setUserInfoImage] = useState("");
     const [userinfo, setUserInfo] = useState({
       image: "",
       name: "",
@@ -112,12 +112,12 @@ function Userinfo(){
                 <form className="userform"  onSubmit={(e) => e.preventDefault()}>
                   <label className="namelab">
                     Name:
-                    <img src={inputuser} width={20} height={20} className="inpimg1" /><input type="text" className="nameinp" placeholder="Enter Your Name" value={userinfo.name} onChange={(e) => setUserInfo({ ...userinfo, "name": e.target.value })} />
+                    {/* <img src={inputuser} width={20} height={20} className="inpimg1" /><input type="text" className="nameinp" placeholder="Enter Your Name" value={userinfo.name} onChange={(e) => setUserInfo({ ...userinfo, "name": e.target.value })} /> */}
                   </label>
                   <br />
                   <label className="namelab">
                     Phone:
-                    <img src={phone} width={20} height={20} className="inpimg4" />  <input type="number" maxLength={11} minLength={11} className="phoneinp" placeholder="Enter Your Tel." value={userinfo.phone} onChange={(e) => setUserInfo({ ...userinfo, "phone": e.target.value })} />
+                    {/* <img src={phone} width={20} height={20} className="inpimg4" />  <input type="number" maxLength={11} minLength={11} className="phoneinp" placeholder="Enter Your Tel." value={userinfo.phone} onChange={(e) => setUserInfo({ ...userinfo, "phone": e.target.value })} /> */}
                   </label>
                   <br />
                   <label className="namelab">
@@ -127,11 +127,11 @@ function Userinfo(){
                   <br />
                 <label className="moneylab">
                   I took money:
-                  <img src={money} width={25} height={25} className="inpimglst" /> <input type="number" className="remoninp" value={userinfo.revmoney} onChange={(e) => setUserInfo({ ...userinfo, "revmoney": e.target.value })} />
+                  {/* <img src={money} width={25} height={25} className="inpimglst" /> <input type="number" className="remoninp" value={userinfo.revmoney} onChange={(e) => setUserInfo({ ...userinfo, "revmoney": e.target.value })} /> */}
                 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <label className="moneylab">
                   I gave money:
-                  <img src={money} width={25} height={25} className="inpimglst" />    <input type="number" className="semoninp" value={userinfo.senmoney} onChange={(e) => setUserInfo({ ...userinfo, "senmoney": e.target.value })} />
+                  {/* <img src={money} width={25} height={25} className="inpimglst" />    <input type="number" className="semoninp" value={userinfo.senmoney} onChange={(e) => setUserInfo({ ...userinfo, "senmoney": e.target.value })} /> */}
                 </label>
                 <br />
               {/* <Link  to="/"> {action === 'Add' && <button sx={{ height: 46, width: 120, fontSize: 25, marginLeft: 30, marginTop: 2.5, fontFamily: "cursive", cursor: "pointer", fontWeight: 800, backgroundColor: "rgb(64, 171, 204)" }} type="submit" onClick={() => adduser()}>Save</button>} */}

@@ -1,21 +1,21 @@
 import Logo from "../images/logo .png"
 import Stress from "../images/stress.png"
 import Gif from "../images/Photo-unscreen.gif"
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import '../Login/Login.css';
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 // import { signInWithEmailAndPassword } from "firebase/auth";
-import {auth} from "../../Firebase";
+// import {auth} from "../../Firebase";
 
 function Login() {
 
   // const navigate = useNavigate();
-    const [errorMsg, setErrorMsg] = useState('');
-    const [submitbuttondisable, setSubmitButtonDisable] = useState(false);
-    const [values, setValues] = useState({
-        email: "",
-        password:"",
-    });
+    // const [errorMsg, setErrorMsg] = useState('');
+    // const [submitbuttondisable, setSubmitButtonDisable] = useState(false);
+    // const [values, setValues] = useState({
+    //     email: "",
+    //     password:"",
+    // });
 
     // const handleSignup = () => {
     //     if(!values.password || !values.email ){
@@ -51,12 +51,12 @@ function Login() {
         <form className="formmain1">
           <div className="form1">
             <label className="emailname1">Email:</label>
-            <input type="email"  onChange={(event) => setValues((prev) =>({...prev, email: event.target.value}))} placeholder="Enter the email" className="email1" />
+            {/* <input type="email"  onChange={(event) => setValues((prev) =>({...prev, email: event.target.value}))} placeholder="Enter the email" className="email1" /> */}
             <br />
             <label className="passwordname1">Password:</label>
-            <input type="password"   onChange={(event) => setValues((prev) =>({...prev, password: event.target.value}))} placeholder="Enter tne password" className="password1" />
+            {/* <input type="password"   onChange={(event) => setValues((prev) =>({...prev, password: event.target.value}))} placeholder="Enter tne password" className="password1" /> */}
             <br />
-            <b className="errer1">{errorMsg}</b>
+            {/* <b className="errer1">{errorMsg}</b> */}
             {/* <button type="button" className="button1" disabled={submitbuttondisable} onClick={handleSignup}>Login</button> */}
             <br />
             <Link to="/Signup"><p className="alreadyacc1"><u>Already have an account? <span className="movepage1">Sign up</span></u></p></Link>

@@ -1,19 +1,19 @@
 import "../Home/Home.css";
-import React, { useEffect, useState, useRef } from 'react';
-import { auth } from "../../Firebase";
+import React, { useEffect, useState } from 'react';
+// import { auth } from "../../Firebase";
 import Logo from "../images/logo .png";
 import 'react-responsive-modal/styles.css';
 import Adduser from "../images/adduser.png";
 import edit from "../images/edit.png";
-import delet from "../images/delet.png";
-import Userinfo from "../Userinfo/Userinfo";
-import cross from "../images/cross.png";
-import User from "../images/user (3).png";
-import inputuser from "../images/inpusr.png";
-import money from "../images/money.png";
-import phone from "../images/phone.png";
+// import delet from "../images/delet.png";
+// import Userinfo from "../Userinfo/Userinfo";
+// import cross from "../images/cross.png";
+// import User from "../images/user (3).png";
+// import inputuser from "../images/inpusr.png";
+// import money from "../images/money.png";
+// import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
-import { storage, db } from "../../Firebase";
+// import { storage, db } from "../../Firebase";
 // import { v4 } from "uuid";
 // import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
 // import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
@@ -21,12 +21,12 @@ import { storage, db } from "../../Firebase";
 
 function Home() {
 
-  const [userName, setUserName] = useState("");
-  const [action, setAction] = useState("");
-  const [editIndex, setEditIndex] = useState("");
-  const [Image, setImage] = useState("");
-  const [defaultImage, setDefaultImage] = useState(User);
-  const [userInfoImage, setUserInfoImage] = useState("");
+  // const [userName, setUserName] = useState("");
+  // const [action, setAction] = useState("");
+  // const [editIndex, setEditIndex] = useState("");
+  // const [Image, setImage] = useState("");
+  // const [defaultImage, setDefaultImage] = useState(User);
+  // const [userInfoImage, setUserInfoImage] = useState("");
   const [userinfodata, setUserInfoData] = useState([]);
 
 
@@ -90,7 +90,7 @@ function Home() {
       <div className="header3">
         <img src={Logo} alt="logo" className="logohome" />
         <h2 className="logoname">PaybackPalace</h2>
-        <h1 className="userName">Wellcome to {userName}</h1>
+        {/* <h1 className="userName">Wellcome to {userName}</h1> */}
         <Link to="/Login" className="logbutref"><button className="LogOut">Log Out</button></Link>
       </div><hr className="hr3" />
       <div className="usermain">
@@ -103,13 +103,13 @@ function Home() {
         <div>
           {userinfodata.length > 0 && userinfodata.map((userinfo, index) => {
             return (<div key={index}>
-              <img src={userinfo.image ? userinfo.image : defaultImage} alt="user" width={70} height={70} /><br />
+              {/* <img src={userinfo.image ? userinfo.image : defaultImage} alt="user" width={70} height={70} /><br /> */}
               <span>Name:</span>{userinfo.name}            <br />
               <span>Phone:</span> {userinfo.phone}            <br />
               <span>Date:</span> {userinfo.date}            <br />
               <span>I took money:</span> {userinfo.revmoney}            <br />
               <span>I gave money:</span> {userinfo.senmoney}            <br />
-              <button onClick={() => editUser(index)}><img src={edit} alt="edit" width={20} height={20} /><span>Edit</span></button>
+              {/* <button onClick={() => editUser(index)}><img src={edit} alt="edit" width={20} height={20} /><span>Edit</span></button> */}
               {/* <button onClick={() => deleteUser(index)}><img src={delet} alt="delete" width={20} height={20} /><span>Delete</span></button> */}
             </div>)
           })}

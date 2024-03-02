@@ -8,7 +8,7 @@ import "./Calucalater.css"
  const handelButtonClick = (value)=> {
  if(value === '='){
   try {
-    const evalResult = eval(expression).toString();
+    const evalResult = (expression).toString();
     setResult(evalResult);
     setExpression(evalResult);
   } catch (error) {

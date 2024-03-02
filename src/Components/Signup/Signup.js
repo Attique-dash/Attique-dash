@@ -1,22 +1,22 @@
 import Logo from "../images/logo .png"
 import Stress from "../images/stress.png"
 import Gif from "../images/Photo-unscreen.gif"
-import React, { useState } from 'react';
+import React  from 'react';
 import "../Signup/Signup.css";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 // import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import {auth} from "../../Firebase";
+// import {auth} from "../../Firebase";
 
 function Signup () {
-    const navigate = useNavigate();
-    const [errorMsg, setErrorMsg] = useState('');
-    const [submitbuttondisable, setSubmitButtonDisable] = useState(false);
-    const [values, setValues] = useState({
-        name:"",
-        password:"",
-        phone:"",
-        email: "",
-    });
+    // const navigate = useNavigate();
+    // const [errorMsg, setErrorMsg] = useState('');
+    // const [submitbuttondisable, setSubmitButtonDisable] = useState(false);
+    // const [values, setValues] = useState({
+    //     name:"",
+    //     password:"",
+    //     phone:"",
+    //     email: "",
+    // });
 
     // const handleSignup = () => {
     //     if(!values.name || !values.password || !values.email || !values.phone){
@@ -57,18 +57,18 @@ function Signup () {
      <form className="formmain2">
       <div className="form2">   
       <label className="namename2">Name:</label>
-          <input type="Text"  onChange={(event) => setValues((prev) =>({...prev, name: event.target.value}))} placeholder="Enter your name" className="Name2" />
+          {/* <input type="Text"  onChange={(event) => setValues((prev) =>({...prev, name: event.target.value}))} placeholder="Enter your name" className="Name2" /> */}
         <br />
       <label className="emailname2">Email:</label>
-          <input type="email"  onChange={(event) => setValues((prev) =>({...prev, email: event.target.value}))} placeholder="Enter the email"  className="email2"/>
+          {/* <input type="email"  onChange={(event) => setValues((prev) =>({...prev, email: event.target.value}))} placeholder="Enter the email"  className="email2"/> */}
         <br />
         <label className="Phonename2">Phone No:</label>
-          <input type="Phone"  onChange={(event) => setValues((prev) =>({...prev, phone: event.target.value}))} placeholder="Enter phone number " className="Phoneno2" />
+          {/* <input type="Phone"  onChange={(event) => setValues((prev) =>({...prev, phone: event.target.value}))} placeholder="Enter phone number " className="Phoneno2" /> */}
         <br />
         <label className="passwordname2">Password:</label>
-          <input type="password"  onChange={(event) => setValues((prev) =>({...prev, password: event.target.value}))} placeholder="Enter tne password" className="password2" />
+          {/* <input type="password"  onChange={(event) => setValues((prev) =>({...prev, password: event.target.value}))} placeholder="Enter tne password" className="password2" /> */}
         <br />
-        <b className="errer2">{errorMsg}</b>
+        {/* <b className="errer2">{errorMsg}</b> */}
         {/* <button type="button" className="button2" onClick={handleSignup} disabled={submitbuttondisable}>Signup</button> */}
         <br/>
         <Link to="/Login"> <p className="alreadyacc2"> <u>Already have an account? <span className="movepage2">Login</span></u></p></Link>
