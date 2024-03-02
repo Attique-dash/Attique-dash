@@ -14,10 +14,10 @@ import money from "../images/money.png";
 import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
 import { storage, db } from "../../Firebase";
-import { v4 } from "uuid";
-import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
-import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
-import Button from '@mui/material/Button';
+// import { v4 } from "uuid";
+// import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
+// import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
+// import Button from '@mui/material/Button';
 
 function Home() {
 
@@ -60,29 +60,29 @@ function Home() {
     setEditIndex(index);
   }
 
-  const deleteUser = async (index) => {
-    try {
-      const userIdToDelete = userinfodata[index].id;
-      const userDocRef = doc(collection(db, "users"), userIdToDelete);
-      await deleteDoc(userDocRef);
-      const newUsers = userinfodata.filter((x, i) => i !== index);
-      setUserInfoData(newUsers);
-      console.log('User data deleted successfully from Firestore');
-    } catch (error) {
-      console.error('Error deleting user data from Firestore:', error);
-    }
-  };
+  // const deleteUser = async (index) => {
+  //   try {
+  //     const userIdToDelete = userinfodata[index].id;
+  //     const userDocRef = doc(collection(db, "users"), userIdToDelete);
+  //     await deleteDoc(userDocRef);
+  //     const newUsers = userinfodata.filter((x, i) => i !== index);
+  //     setUserInfoData(newUsers);
+  //     console.log('User data deleted successfully from Firestore');
+  //   } catch (error) {
+  //     console.error('Error deleting user data from Firestore:', error);
+  //   }
+  // };
 
-  useEffect(() => {
-    auth.onAuthStateChanged(user => {
-      if (user) {
-        setUserName(user.displayName)
-      } else {
-        setUserName("");
-      }
-      console.log(user)
-    })
-  }, [])
+  // useEffect(() => {
+  //   auth.onAuthStateChanged(user => {
+  //     if (user) {
+  //       setUserName(user.displayName)
+  //     } else {
+  //       setUserName("");
+  //     }
+  //     console.log(user)
+  //   })
+  // }, [])
 
   return (
     <>
@@ -110,7 +110,7 @@ function Home() {
               <span>I took money:</span> {userinfo.revmoney}            <br />
               <span>I gave money:</span> {userinfo.senmoney}            <br />
               <button onClick={() => editUser(index)}><img src={edit} alt="edit" width={20} height={20} /><span>Edit</span></button>
-              <button onClick={() => deleteUser(index)}><img src={delet} alt="delete" width={20} height={20} /><span>Delete</span></button>
+              {/* <button onClick={() => deleteUser(index)}><img src={delet} alt="delete" width={20} height={20} /><span>Delete</span></button> */}
             </div>)
           })}
         </div>

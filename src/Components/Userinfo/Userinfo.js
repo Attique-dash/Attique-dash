@@ -15,8 +15,8 @@ import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
 import { storage, db } from "../../Firebase";
 import { v4 } from "uuid";
-import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
-import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
+// import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
+// import { collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
 import Home from "../Home/Home";
 
 function Userinfo(){
@@ -46,48 +46,48 @@ function Userinfo(){
     }, [userinfodata]);
   
   
-    const adduser =  () => {
-      const docRef =  addDoc(collection(db, "users"), { ...userinfo, image: userInfoImage });
-      try {
-        setUserInfo({ image: "", name: "", phone: "", date: "", revmoney: "", senmoney: "" });
-        setUserInfoImage("");
-      } catch (error) {
-        console.error("Error submitting user data:", error);
-      }
-      setAction("Add");
-      setDefaultImage(User);
-    };
+    // const adduser =  () => {
+    //   const docRef =  addDoc(collection(db, "users"), { ...userinfo, image: userInfoImage });
+    //   try {
+    //     setUserInfo({ image: "", name: "", phone: "", date: "", revmoney: "", senmoney: "" });
+    //     setUserInfoImage("");
+    //   } catch (error) {
+    //     console.error("Error submitting user data:", error);
+    //   }
+    //   setAction("Add");
+    //   setDefaultImage(User);
+    // };
   
-    const inputRef = useRef(null);
+    // const inputRef = useRef(null);
 
-    const handelImageClick = () => {
-      inputRef.current.click();
-    };
+    // const handelImageClick = () => {
+    //   inputRef.current.click();
+    // };
   
-    const handelImageChange = (event) => {
-      const file = event.target.files[0];
-      const imgs = ref(storage, `Imgs/${v4()}`);
-      uploadBytes(imgs, file).then((data) => {
-        getDownloadURL(data.ref).then((url) => {
-          setUserInfoImage(url);
-        });
-      });
-    };
+    // const handelImageChange = (event) => {
+    //   const file = event.target.files[0];
+    //   const imgs = ref(storage, `Imgs/${v4()}`);
+    //   uploadBytes(imgs, file).then((data) => {
+    //     getDownloadURL(data.ref).then((url) => {
+    //       setUserInfoImage(url);
+    //     });
+    //   });
+    // };
   
-    const updateuser = async () => {
-      await updateDoc(doc(db, "users", userinfodata[editIndex].id), { ...userinfo, image: userInfoImage });
-      const updatedUsers = [...userinfodata];
-      setUserInfoData(updatedUsers);
-      setUserInfo({
-        image: "",
-        name: "",
-        phone: "",
-        date: "",
-        revmoney: "",
-        senmoney: ""
-      }); 
-     setEditIndex(null);
-    };
+    // const updateuser = async () => {
+    //   await updateDoc(doc(db, "users", userinfodata[editIndex].id), { ...userinfo, image: userInfoImage });
+    //   const updatedUsers = [...userinfodata];
+    //   setUserInfoData(updatedUsers);
+    //   setUserInfo({
+    //     image: "",
+    //     name: "",
+    //     phone: "",
+    //     date: "",
+    //     revmoney: "",
+    //     senmoney: ""
+    //   }); 
+    //  setEditIndex(null);
+    // };
   
     return(
         <>
@@ -100,7 +100,7 @@ function Userinfo(){
           <>
             <div>
               <div className="mnusrinfodiv">
-                <div className="infoimgdiv" onClick={handelImageClick}>
+                {/* <div className="infoimgdiv" onClick={handelImageClick}>
                   {userinfo.image ? (
                     <img src={userinfo.image} alt="upload" className="usrupldimg" />
                   ) : (
@@ -108,7 +108,7 @@ function Userinfo(){
                   )}
                   <input type="file" ref={inputRef} style={{ display: "none" }} onChange={handelImageChange} />
                   <button onClick={handelImageClick}>Select Image</button>
-                </div>
+                </div> */}
                 <form className="userform"  onSubmit={(e) => e.preventDefault()}>
                   <label className="namelab">
                     Name:
@@ -134,8 +134,8 @@ function Userinfo(){
                   <img src={money} width={25} height={25} className="inpimglst" />    <input type="number" className="semoninp" value={userinfo.senmoney} onChange={(e) => setUserInfo({ ...userinfo, "senmoney": e.target.value })} />
                 </label>
                 <br />
-              <Link  to="/"> {action === 'Add' && <button sx={{ height: 46, width: 120, fontSize: 25, marginLeft: 30, marginTop: 2.5, fontFamily: "cursive", cursor: "pointer", fontWeight: 800, backgroundColor: "rgb(64, 171, 204)" }} type="submit" onClick={() => adduser()}>Save</button>}
-                {action === 'Edit' && <button  type="submit" onClick={() => updateuser()}>Update</button>}</Link> 
+              {/* <Link  to="/"> {action === 'Add' && <button sx={{ height: 46, width: 120, fontSize: 25, marginLeft: 30, marginTop: 2.5, fontFamily: "cursive", cursor: "pointer", fontWeight: 800, backgroundColor: "rgb(64, 171, 204)" }} type="submit" onClick={() => adduser()}>Save</button>} */}
+                {/* {action === 'Edit' && <button  type="submit" onClick={() => updateuser()}>Update</button>}</Link>  */}
                 <Link to="/calucalater"><button>Next</button></Link>
                 <Link to="/"><button>Cancel</button></Link>
                 </form>

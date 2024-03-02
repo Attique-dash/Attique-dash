@@ -4,7 +4,7 @@ import Gif from "../images/Photo-unscreen.gif"
 import React, { useState } from 'react';
 import "../Signup/Signup.css";
 import {Link, useNavigate} from "react-router-dom";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+// import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import {auth} from "../../Firebase";
 
 function Signup () {
@@ -18,28 +18,28 @@ function Signup () {
         email: "",
     });
 
-    const handleSignup = () => {
-        if(!values.name || !values.password || !values.email || !values.phone){
-            setErrorMsg("Fill all fields")
-            return;
-        }
-         setErrorMsg("");
-        setSubmitButtonDisable(true);
+    // const handleSignup = () => {
+    //     if(!values.name || !values.password || !values.email || !values.phone){
+    //         setErrorMsg("Fill all fields")
+    //         return;
+    //     }
+    //      setErrorMsg("");
+    //     setSubmitButtonDisable(true);
          
-        createUserWithEmailAndPassword(auth,values.email,values.password)
-        .then(async(res) =>{
-          setSubmitButtonDisable(false);
-          const user = res.user;
-         await updateProfile(user,{
-            displayName: values.name,
-          });
-          navigate("/");
-        })
-        .catch(err =>{
-          setSubmitButtonDisable(false);
-          setErrorMsg(err.message)
-        })
-    }
+    //     createUserWithEmailAndPassword(auth,values.email,values.password)
+    //     .then(async(res) =>{
+    //       setSubmitButtonDisable(false);
+    //       const user = res.user;
+    //      await updateProfile(user,{
+    //         displayName: values.name,
+    //       });
+    //       navigate("/");
+    //     })
+    //     .catch(err =>{
+    //       setSubmitButtonDisable(false);
+    //       setErrorMsg(err.message)
+    //     })
+    // }
 
     return(
         <>
@@ -69,7 +69,7 @@ function Signup () {
           <input type="password"  onChange={(event) => setValues((prev) =>({...prev, password: event.target.value}))} placeholder="Enter tne password" className="password2" />
         <br />
         <b className="errer2">{errorMsg}</b>
-        <button type="button" className="button2" onClick={handleSignup} disabled={submitbuttondisable}>Signup</button>
+        {/* <button type="button" className="button2" onClick={handleSignup} disabled={submitbuttondisable}>Signup</button> */}
         <br/>
         <Link to="/Login"> <p className="alreadyacc2"> <u>Already have an account? <span className="movepage2">Login</span></u></p></Link>
       </div>
