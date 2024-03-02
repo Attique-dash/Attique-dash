@@ -1,12 +1,12 @@
 [build]
-  base = "build"  # Specify the directory where your built files are located
-  publish = "build"  # Specify the directory to deploy
+  base = "."  # Specify the root directory of your project
+  publish = "build"  # Specify the directory where your built files are located
   command = "npm run build"  # Specify the build command
 
 [build.environment]
   NODE_VERSION = "14"  # Specify the Node.js version used for the build
 
-[[redirects]]  # Redirects configuration (optional)
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
