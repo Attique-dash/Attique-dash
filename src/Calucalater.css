@@ -1,0 +1,57 @@
+.Calucalater{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+}
+.calname{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.clainp{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+}
+.calinp1{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.875rem;
+    border-bottom-width: 2px;
+    border-color: #cbd5e0;
+
+}
+.calinp1:focus{
+    outline: none;
+
+}
+
+.calinp2{
+    width: 100%;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.calinp2:focus{
+    outline: 2px solid #0000ff;
+
+}
+.showcal{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+.showcal1{
+    font-size: 2.25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #d1d5db;
+    cursor: pointer;
+    
+}
+.showcal1:hover {
+    background-color: #9ca3af;
+}

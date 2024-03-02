@@ -1,0 +1,181 @@
+.header{
+    height: 60px;
+    background-color: darkcyan;
+    color: white;
+    padding-bottom: 10px;
+  }
+  .headerdiv{
+  display: flex;
+  margin-left: 20px;
+  
+  }
+  hr{
+    margin: 0px;
+      border: solid white 1px;
+  }
+  .logo{
+    height: 59px;
+    width: 86px;
+    margin-top: 5px;
+  }
+  .logoname{
+    font-family: cursive;
+    color: aliceblue;
+  }
+  .main{
+    display: flex;
+    width: 100%;
+      height: 553px;
+      background-color: darkslategrey;
+  }
+  .imgdiv{
+    display: flex;
+  }
+  .Gif{
+    height: 385px;
+    margin-top: 70px;
+    width: 440px;
+    position: absolute;
+  }
+  .Stress{
+    width: 325px;
+    height: 520px;
+    margin-left: 300px;
+    margin-top: 23px;
+  }
+  .formmain2{
+    margin-left: 45px;
+    margin-top: 10px;
+    height: 530px;
+    width: 590px;
+    background-color: darkcyan;
+    border-radius: 10px
+  }
+  .form2{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  .Name2{
+    width: 435px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color:white ;
+    padding-left: 20px;
+    border: solid darkslategrey;
+    color: darkslategrey;
+    margin-bottom: 42px;
+
+  }
+  .email2{
+    width: 435px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color:white ;
+    padding-left: 20px;
+    border: solid darkslategrey;
+    color: darkslategrey;
+    margin-bottom: 3px;
+  }
+  .password2{
+    width: 435px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 20px;
+    color: darkslategrey;
+    border: solid darkslategrey;
+    margin-bottom: 28px;
+  }
+  .Phoneno2{
+    width: 435px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 20px;
+    color: darkslategrey;
+    border: solid darkslategrey;
+    margin-bottom: 3px;
+    
+  }
+  ::placeholder{
+    color: darkslategrey;
+  }
+  .emailname2{
+    position: absolute;
+    top: 206px;
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .passwordname2{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .namename2{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .Phonename2{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .button2{
+    width: 130px;
+      height: 50px;
+      margin-left: 160px;
+      font-size: 27px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-family: cursive;
+      box-shadow: 0 5px 0 darkslategray;
+      padding-bottom: 5px;
+      cursor: pointer;
+      background-color:  darkslategrey;
+      color: white;
+      border: solid white;
+  }
+  .button2:active{
+  box-shadow: none;
+  transform: translateY(5px);
+  }
+  .alreadyacc2{
+    margin-left: 95px;
+      font-size: 18px;
+      font-family: cursive;
+      color: white;
+      font-weight: bold;
+  }
+  .movepage2{
+    cursor: pointer;
+    color:darkslategrey ;
+  }
+  .errer2{
+    position: fixed;
+    margin-left: 172px;
+    bottom: 108px;
+    font-family: cursive;
+    color: rgb(104, 15, 15);
+  }
+  .button2:disabled{
+    background-color: gray;
+  }
+  .errer2{
+    margin-bottom: 5px;
+    margin-left: 80px;
+
+  }

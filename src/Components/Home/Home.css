@@ -1,0 +1,263 @@
+.header3{
+    display: flex;
+    height: 70px;
+    background-color: darkcyan;
+
+}
+.logohome{
+    height: 59px;
+    width: 86px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.userName{
+  margin-left: 260px;
+  color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+.logbutref{
+  margin-left: 435px;
+  margin-top: 10px;
+}
+.LogOut{
+    width: 120px;
+    height: 48px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: cursive;
+    box-shadow: 0 5px 0 darkslategray;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color:  darkslategrey;
+    color: white;
+    border: solid white;
+}
+.LogOut:active{
+    box-shadow: none;
+    transform: translateY(5px);
+ }
+ .LogOut:disabled{
+    background-color: gray;
+  }
+ 
+  body{
+    background-color:  darkslategrey;
+  }
+  .newdivusr{
+    margin-left: 470px;
+    padding-top: 40px;
+}
+  .adduser{
+    display: flex;
+    height: 75px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px darkcyan;
+    color: darkslategrey;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: cursive;
+    cursor: pointer;
+    align-items: center;
+    padding-left: 18px;
+    box-shadow: 0 5px 0 white;
+  }
+  .adduser:active{
+    box-shadow: none;
+    transform: translateY(5px);
+ }
+ .userinfobutref{
+  text-decoration: none;
+ }
+  .newusricon{
+  width: 70px;
+  }
+  .hrline{
+    margin-top: 25px;
+  }
+  .userinfo{
+    position: fixed;
+    top: 0;
+    width: 730px;
+    height: 535px;
+    background: white;
+    margin-left: 285px;
+    margin-top: 20px;
+    border-radius: 7px;
+
+  }
+  .userhader{
+    display: flex;
+    align-items: center; 
+    background: rgb(64, 171, 204);
+    border-radius: 7px;
+
+  } 
+  .usrnam{
+    margin-left: 315px;
+    font-size: 25px;
+    font-family: cursive;
+    color:rgb(235, 230, 230) ;
+  }
+
+  .closebutt{
+    margin-left: 240px;
+    width: 55px;
+    height: 28px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+  }
+  .usrupldimg{
+    height: 225px;
+    margin-top: 5px;
+    padding-left: 1px;
+  }
+  .infoimgdiv{
+    border: solid darkcyan;
+    width: 235px;
+    margin-left: 15px;
+    margin-top: 20px;
+    height: 240px;
+    cursor: pointer;
+
+  }
+  .mnusrinfodiv{
+    display: flex;
+  }
+  .userform{
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+  .namelab{
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(64, 171, 204);
+  }
+  .nameinp{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding-left: 35px;
+    margin-left: 8px;
+    color: darkcyan;
+    border: solid darkslategrey;
+    border-radius: 5px;
+
+  }
+  .ageinp{
+    width: 272px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    font-size: 25px ;
+    color: darkcyan;
+    padding-left: 34px;
+    border: solid darkslategrey;
+    border-radius: 5px;
+
+  }
+  .cityinp{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    font-size: 25px;
+    padding-left: 35px;
+    color: darkcyan;
+    border: solid darkslategrey;
+    border-radius: 5px;
+
+  }
+  .dateinp{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    color: darkslategrey;
+    border: solid darkslategrey;
+    border-radius: 5px;
+    padding-left: 34px;
+
+  }
+  input::placeholder{
+    font-size: 20px;
+    color: darkslategrey;
+   font-family: cursive;
+  }
+
+  .inpimg1{
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 17px;
+  }
+  .inpimg2{
+    position: absolute;
+    margin-left: 34px;
+    margin-top: 11px;
+  }
+  .inpimg3{
+    position: absolute;
+    margin-left: 37px;
+    margin-top: 14px;
+  }
+  .inpimg4{
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+  .phoneinp{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding-left: 35px;
+    margin-left: 2px;
+    color: darkcyan;
+    border: solid darkslategrey;
+    border-radius: 5px;
+
+  }
+  .infofotter{
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .moneylab{
+    font-size: 21px;
+    font-family: cursive;
+    color: rgb(64, 171, 204);
+    font-weight: 600;
+  }
+  .remoninp{
+    height: 35px;
+    width: 140px;
+    font-size: 20px;
+    color: darkcyan;
+    border: solid darkslategrey;
+    border-radius: 5px;
+    padding-left: 30px;
+
+  }
+  .semoninp{
+    height: 38px;
+    width: 140px;
+    font-size: 20px;
+    color: darkcyan;
+    border: solid darkslategrey;
+    border-radius: 5px;
+    padding-left: 30px;
+
+  }
+.inpimglst{
+  position: absolute;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+.svestr{
+  display: flex;
+}

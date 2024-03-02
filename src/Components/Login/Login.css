@@ -1,0 +1,140 @@
+.header{
+  height: 60px;
+  background-color: darkcyan;
+  color: white;
+  padding-bottom: 10px;
+}
+.headerdiv{
+display: flex;
+margin-left: 20px;
+
+}
+hr{
+  margin: 0px;
+    border: solid white 1px;
+}
+.logo{
+  height: 59px;
+  width: 86px;
+  margin-top: 5px;
+
+}
+.logoname{
+  font-family: cursive;
+  color: aliceblue;
+}
+.main{
+  display: flex;
+  width: 100%;
+    height: 553px;
+    background-color: darkslategrey;
+}
+.imgdiv{
+  display: flex;
+}
+.Gif{
+  height: 385px;
+  margin-top: 70px;
+  width: 440px;
+  position: absolute;
+}
+.Stress{
+  width: 325px;
+  height: 520px;
+  margin-left: 300px;
+  margin-top: 23px;
+}
+.formmain1{
+  margin-left: 45px;
+  margin-top: 75px;
+  height: 415px;
+  width: 590px;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+.form1{
+  margin-left: 60px;
+  margin-top: 80px;
+}
+.email1{
+  width: 435px;
+  height: 50px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color:white ;
+  padding-left: 20px;
+  border: solid darkslategrey;
+  color: darkslategrey;
+}
+.password1{
+  width: 435px;
+  height: 50px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 20px;
+  color: darkslategrey;
+  margin-top: 2px;
+  border: solid darkslategrey;
+}
+::placeholder{
+  color: darkslategrey;
+}
+.emailname1{
+  position: absolute;
+  top: 191px;
+  font-size: 25px;
+  color: white;
+  font-family: cursive;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.passwordname1{
+  font-size: 25px;
+  color: white;
+  font-family: cursive;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.button1{
+  width: 130px;
+    height: 50px;
+    margin-left: 160px;
+    font-size: 27px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: cursive;
+    box-shadow: 0 5px 0 darkslategray;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color:  darkslategrey;
+    color: white;
+    border: solid white;
+}
+.button1:active{
+box-shadow: none;
+transform: translateY(5px);
+}
+.alreadyacc1{
+  margin-left: 95px;
+    font-size: 18px;
+    font-family: cursive;
+    color: white;
+    font-weight: bold;
+}
+.movepage1{
+  color: darkslategrey;
+  cursor: pointer;
+}
+.errer1{
+  position: absolute;
+  bottom: 187px;
+  margin-left: 95px;
+  font-family: cursive;
+  color: rgb(104, 15, 15);
+}
+.button1:disabled{
+  background-color: gray;
+}

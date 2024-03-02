@@ -1,0 +1,12 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "attique",
+            "phone": "04944434842",
+            "date": "2/28/2024",
+            "tookmoney": "2000",
+            "gavemoney": "0"
+        }
+    ]
+}
