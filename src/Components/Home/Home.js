@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Logo from "../images/logo .png";
 import 'react-responsive-modal/styles.css';
 import Adduser from "../images/adduser.png";
-import edit from "../images/edit.png";
+// import edit from "../images/edit.png";
 // import delet from "../images/delet.png";
 // import Userinfo from "../Userinfo/Userinfo";
 // import cross from "../images/cross.png";

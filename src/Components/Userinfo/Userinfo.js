@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "../Userinfo/Userinfo.css";
 // import { auth } from "../../Firebase";
 import Logo from "../images/logo .png";
@@ -9,9 +9,9 @@ import 'react-responsive-modal/styles.css';
 // import delet from "../images/delet.png";
 // import cross from "../images/cross.png";
 // import User from "../images/user (3).png";
-import inputuser from "../images/inpusr.png";
-import money from "../images/money.png";
-import phone from "../images/phone.png";
+// import inputuser from "../images/inpusr.png";
+// import money from "../images/money.png";
+// import phone from "../images/phone.png";
 import { Link } from "react-router-dom";
 // import { storage, db } from "../../Firebase";
 // import { v4 } from "uuid";
